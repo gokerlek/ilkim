@@ -1,28 +1,22 @@
-export type AuthRoutes = {
-  login: string;
-  forgot_password: string;
-};
-
 export type DashboardRoutes = {
   main: string;
+  about_me: string;
+  what_to_expect: string;
+  contact: string;
 };
 
-export type Routes = AuthRoutes &
-  DashboardRoutes & {
-    access_denied: string;
-  };
-
-export const auth: AuthRoutes = {
-  login: "/login",
-  forgot_password: "/forgot-password",
+export type Routes = DashboardRoutes & {
+  access_denied: string;
 };
 
 export const dashboard: DashboardRoutes = {
   main: "/",
+  about_me: "/about-me",
+  what_to_expect: "/what-to-expect",
+  contact: "/contact",
 };
 
 export const paths: Routes = {
-  ...auth,
   ...dashboard,
   access_denied: "/access-denied",
 };

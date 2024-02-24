@@ -1,8 +1,11 @@
 import { ReactElement } from "react";
 import { paths } from "./paths";
 
-import Home from "./pages/Home";
+import Home from "./pages/home.tsx";
 import { Main } from "@/layouts/main.tsx";
+import AboutMe from "@/pages/about-me.tsx";
+import WhatToExpect from "@/pages/what_to_expect.tsx";
+import Contact from "@/pages/contact.tsx";
 
 interface Route {
   path: string;
@@ -21,6 +24,18 @@ const routes: (Route | NestedRoute)[] = [
       {
         path: paths.main,
         element: <Home />,
+      },
+      {
+        path: paths.about_me,
+        element: <AboutMe />,
+      },
+      {
+        path: paths.what_to_expect,
+        element: <WhatToExpect />,
+      },
+      {
+        path: paths.contact,
+        element: <Contact />,
       },
     ],
   },

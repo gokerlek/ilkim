@@ -1,24 +1,32 @@
 import { paths } from "./paths.ts";
-import { component_permissions } from "./permissions.ts";
 
 // SIDEBAR ITEMS
-type sidebarItems = {
+type navigationItems = {
   id: number;
   name: string;
   path: string;
-  icon: string;
-  icon_active: string;
-  permissions?: number[];
 };
 
-export const sidebarItems: sidebarItems[] = [
+export const navigationItems: navigationItems[] = [
   {
     id: 1,
-    name: "home",
+    name: "Home",
     path: paths.main,
-    icon: "home",
-    icon_active: "home active",
-    permissions: component_permissions.home,
+  },
+  {
+    id: 2,
+    name: "About me",
+    path: paths.about_me,
+  },
+  {
+    id: 3,
+    name: "What to expect",
+    path: paths.what_to_expect,
+  },
+  {
+    id: 4,
+    name: "Contact",
+    path: paths.contact,
   },
 ];
 
@@ -60,3 +68,8 @@ export type ButtonPurpose =
 export type Size = (typeof SIZE)[keyof typeof SIZE];
 
 export type WidthType = (typeof WIDTH)[keyof typeof WIDTH];
+
+export const color = {
+  primary: "#009193",
+  secondary: "#E2E2E2",
+};

@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.18",
     "@tailwindcss/container-queries": "^0.1.1",
     "@types/ramda": "^0.29.10",
     "clsx": "^2.1.0",
