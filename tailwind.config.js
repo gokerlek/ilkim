@@ -4,11 +4,16 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ["Montserrat", "sans-serif"],
+        body: ["Work Sans", "sans-serif"],
       },
       colors: {
         primary: "#009193",
-        secondary: "#E2E2E2",
+        secondary: "#b2cbe3",
+        text: {
+          primary: "#292E3D",
+          secondary: "#E2E2E2",
+          muted: "#979797",
+        },
       },
     },
   },

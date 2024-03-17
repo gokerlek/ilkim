@@ -5,6 +5,8 @@ import "./index.css";
 import Provider from "@/context/provider.tsx";
 import { BrowserRouter } from "react-router-dom";
 
+import "./i18n.js";
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
     <React.StrictMode>

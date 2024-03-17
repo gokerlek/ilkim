@@ -71,5 +71,5 @@ export type WidthType = (typeof WIDTH)[keyof typeof WIDTH];
 
 export const color = {
   primary: "#009193",
-  secondary: "#E2E2E2",
+  secondary: "#b2cbe3",
 };
