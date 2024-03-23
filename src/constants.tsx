@@ -73,3 +73,13 @@ export const color = {
   primary: "#009193",
   secondary: "#b2cbe3",
 };
+
+export const default_nav = {
+  backgroundColor: "transparent",
+  boxShadow: "none",
+};
+export const defaultStyle = {
+  logo: { height: 96, color: "white" },
+  nav: default_nav,
+  plus: { height: 64 },
+};
