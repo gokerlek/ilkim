@@ -6,7 +6,7 @@ const Home: FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="mx-auto max-w-5xl space-y-5">
+    <div className="mx-auto  space-y-5">
       <div className="title">{t("home_page_title")}</div>
       <Markdown className="paragraph space-y-5 text-justify">
         {t("home_page_description")}

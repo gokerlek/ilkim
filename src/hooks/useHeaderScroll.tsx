@@ -12,7 +12,7 @@ export const useHeaderScroll = () => {
         setStyle({
           logo: { height: 64, color: primary },
           nav: {
-            backgroundColor: secondary,
+            background: `linear-gradient(to right, white 25%, ${secondary} 75%)`,
             boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
           },
           plus: { height: 48 },

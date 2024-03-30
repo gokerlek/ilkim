@@ -12,6 +12,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
+    "@hookform/resolvers": "^3.3.4",
     "@tailwindcss/container-queries": "^0.1.1",
     "@types/ramda": "^0.29.10",
     "clsx": "^2.1.0",
@@ -22,9 +23,11 @@
     "ramda": "^0.29.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.1",
     "react-i18next": "^14.1.0",
     "react-inlinesvg": "^4.1.1",
-    "react-markdown": "^9.0.1"
+    "react-markdown": "^9.0.1",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
@@ -36,6 +39,7 @@
     "@typescript-eslint/parser": "^6.21.0",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.17",
+    "emailjs-com": "^3.2.0",
     "eslint": "^8.56.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",

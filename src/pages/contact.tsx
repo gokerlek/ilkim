@@ -1,9 +1,17 @@
 import { FC } from "react";
+import { ContactForm } from "@/components/contact/contact-form.tsx";
 
 const Contact: FC = () => {
   return (
-    <div className=" space-y-5">
-      <div className="flex h-40  w-full rounded-lg" />
+    <div className="flex flex-1 flex-col gap-10 md:flex-row">
+      <div className="hidden flex-1 items-center justify-center md:flex">
+        <img
+          className="h-fit max-w-[450px]"
+          src="/icons/envelope.svg"
+          alt="contact"
+        />
+      </div>
+      <ContactForm />
     </div>
   );
 };

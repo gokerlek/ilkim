@@ -7,11 +7,19 @@ body {
 }
 
 .title {
-  @apply text-4xl font-bold text-gray-800
+  @apply text-2xl md:text-4xl font-bold text-gray-800
+}
+
+.subtitle {
+  @apply text-base md:text-2xl font-semibold text-gray-700
+}
+
+.list {
+  @apply list-disc text-base md:text-lg text-gray-700 font-light ml-8
 }
 
 .paragraph {
-  @apply text-lg text-gray-700 font-light
+  @apply text-base md:text-lg text-gray-700 font-light
 }
 
 

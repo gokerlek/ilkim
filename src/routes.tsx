@@ -26,16 +26,21 @@ const routes: (Route | NestedRoute)[] = [
         element: <Home />,
       },
       {
-        path: paths.about_me,
-        element: <AboutMe />,
+        path: paths.contact,
+        element: <Contact />,
       },
+    ],
+  },
+  {
+    element: <Main full />,
+    children: [
       {
         path: paths.what_to_expect,
         element: <WhatToExpect />,
       },
       {
-        path: paths.contact,
-        element: <Contact />,
+        path: paths.about_me,
+        element: <AboutMe />,
       },
     ],
   },

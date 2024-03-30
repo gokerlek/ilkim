@@ -71,11 +71,12 @@ export type WidthType = (typeof WIDTH)[keyof typeof WIDTH];
 
 export const color = {
   primary: "#009193",
-  secondary: "#b2cbe3",
+  secondary: "#e0cdcc",
+  blue: "#b2cbe3",
 };
 
 export const default_nav = {
-  backgroundColor: "transparent",
+  background: "transparent",
   boxShadow: "none",
 };
 export const defaultStyle = {
