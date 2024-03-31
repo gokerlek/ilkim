@@ -19,14 +19,14 @@ const WhatToExpect: FC = () => {
               <div
                 key={index}
                 className={clsx(
-                  "paragraph flex  items-center gap-8 rounded-lg bg-secondary/20 p-8 text-justify",
+                  "paragraph flex  items-center gap-5 rounded-lg bg-secondary/20 p-5 text-justify md:gap-8 md:p-8",
                   {
                     "flex-row-reverse": index % 2 !== 0,
                     "flex-row": index % 2 === 0,
                   },
                 )}
               >
-                <div className=" text-8xl font-black text-black/10">
+                <div className="text-6xl font-black text-black/10 md:text-8xl">
                   {index + 1}
                 </div>
                 {item}
