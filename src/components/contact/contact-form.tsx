@@ -1,4 +1,4 @@
-import { FC, useRef } from "react";
+import { FC, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/buttons/button.tsx";
 import { BUTTON_PURPOSE } from "@/constants.tsx";
@@ -24,17 +24,25 @@ export const ContactForm: FC = () => {
     resolver: fromResolver,
   });
 
+  const [loading, setLoading] = useState(false);
+
   const onSubmit = () => {
     const mail = formRef.current;
+    setLoading(true);
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, mail, USER_ID).then(
-      (response) => {
-        console.log("Email başarıyla gönderildi!", response);
-      },
-      (error) => {
-        console.log("Email gönderme hatası:", error);
-      },
-    );
+    emailjs
+      .sendForm(SERVICE_ID, TEMPLATE_ID, mail, USER_ID)
+      .then(
+        (response) => {
+          console.log("Email başarıyla gönderildi!", response);
+        },
+        (error) => {
+          console.log("Email gönderme hatası:", error);
+        },
+      )
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   const { name, email, subject, message } = errors ?? {};
@@ -111,7 +119,9 @@ export const ContactForm: FC = () => {
           </ErrorWrapper>
         </div>
 
-        <Button purpose={BUTTON_PURPOSE.BLUE}>Send</Button>
+        <Button width="full" loading={loading} purpose={BUTTON_PURPOSE.GRAY}>
+          Send
+        </Button>
       </form>
     </div>
   );

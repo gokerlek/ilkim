@@ -27,9 +27,8 @@ export const Navigation: FC<NavigationProps> = ({
             key={name}
             className={({ isActive }) =>
               clsx(
-                "hover:text-text-primary focus-visible:none text-lg capitalize transition-all  duration-300 ease-in-out focus:outline-none",
-                { " font-bold text-gray-800": isActive },
-                { "capitalize text-white": !isActive },
+                "focus-visible:none text-lg capitalize text-gray-800 transition-all duration-300  ease-in-out hover:text-text-primary focus:outline-none",
+                { " font-bold": isActive },
               )
             }
           >

@@ -32,7 +32,7 @@ const purposeClassMap: Record<ButtonPurpose, string> = {
   [BUTTON_PURPOSE.BLUE]: "bg-blue-500 hover:bg-blue-600",
   [BUTTON_PURPOSE.RED]: "bg-red-500 hover:bg-red-600",
   [BUTTON_PURPOSE.GREEN]: "bg-green-500 hover:bg-green-600",
-  [BUTTON_PURPOSE.GRAY]: "bg-gray-500 hover:bg-gray-600",
+  [BUTTON_PURPOSE.GRAY]: "bg-stone-500 hover:bg-stone-600",
   [BUTTON_PURPOSE.WARNING]: "bg-yellow-500 hover:bg-yellow-600",
   [BUTTON_PURPOSE.DELETE]: "bg-red-500 hover:bg-red-600",
 };
@@ -41,7 +41,7 @@ const disabledPurposeClassMap: Record<ButtonPurpose, string> = {
   [BUTTON_PURPOSE.BLUE]: "bg-blue-300",
   [BUTTON_PURPOSE.RED]: "bg-red-300",
   [BUTTON_PURPOSE.GREEN]: "bg-green-300",
-  [BUTTON_PURPOSE.GRAY]: "bg-gray-300",
+  [BUTTON_PURPOSE.GRAY]: "bg-stone-300",
   [BUTTON_PURPOSE.WARNING]: "bg-yellow-300",
   [BUTTON_PURPOSE.DELETE]: "bg-red-300",
 };
