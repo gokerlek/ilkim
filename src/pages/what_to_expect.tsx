@@ -44,13 +44,13 @@ const WhatToExpect: FC = () => {
               {t("what_do_i_not_work_with_content")}
             </div>
 
-            <div className="paragraph space-y-5 text-justify">
+            <div className="space-y-5 text-justify text-base font-semibold text-gray-700 md:text-lg">
               {t("i_do_not_have_a_waitlist_at_the_moment")}
             </div>
 
             <div className="subtitle">{t("fees")}</div>
 
-            <Markdown className="paragraph space-y-5 text-justify">
+            <Markdown className="paragraph space-y-5 text-justify prose-strong:font-semibold">
               {t("fees_content")}
             </Markdown>
 

@@ -11,7 +11,21 @@ export const ContactInfo: FC = () => {
 
       <div className="flex items-center space-x-2">
         <PhoneIcon className="h-6 w-6" />
-        <span>+31 6 27369941 </span>
+        <span>+31 6 31217691 </span>
+      </div>
+
+      <div className="flex items-center space-x-2">
+        <span className="font-bold">NIP </span>
+        <span className="hidden md:block">
+          (Nederlands Instituut van Psychologen){" "}
+        </span>
+        <span className="font-bold"> Code:</span>
+        <span>245024</span>
+      </div>
+
+      <div className="flex items-center space-x-2">
+        <span className="font-bold">KVK: </span>
+        <span>8677907</span>
       </div>
     </div>
   );
