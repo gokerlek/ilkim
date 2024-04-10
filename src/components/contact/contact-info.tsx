@@ -17,7 +17,7 @@ export const ContactInfo: FC = () => {
       <div className="flex items-center space-x-2">
         <span className="font-bold">NIP </span>
         <span className="hidden md:block">
-          (Nederlands Instituut van Psychologen){" "}
+          (Nederlands Instituut van Psychologen)
         </span>
         <span className="font-bold"> Code:</span>
         <span>245024</span>
