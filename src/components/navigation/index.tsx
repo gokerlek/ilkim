@@ -2,6 +2,7 @@ import { FC } from "react";
 import { navigationItems } from "@/constants.tsx";
 import { NavLink } from "react-router-dom";
 import clsx from "clsx";
+import { useTranslation } from "react-i18next";
 
 interface NavigationProps {
   mode: "mobile" | "desktop";
@@ -11,6 +12,7 @@ export const Navigation: FC<NavigationProps> = ({
   mode = "desktop",
   close,
 }) => {
+  const { t } = useTranslation();
   return (
     <div
       className={clsx(" min-w-fit ", {
@@ -32,7 +34,7 @@ export const Navigation: FC<NavigationProps> = ({
               )
             }
           >
-            {name}
+            {t(name)}
           </NavLink>
         );
       })}

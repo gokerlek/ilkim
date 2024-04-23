@@ -7,6 +7,7 @@ import { PlusIcon } from "@heroicons/react/16/solid";
 import { FC } from "react";
 import { useHeaderScroll } from "@/hooks/useHeaderScroll.tsx";
 import { useMenu } from "@/components/header/Menu.tsx";
+import ChangeLanguageButton from "@/components/buttons/change_language.tsx";
 
 export const DesktopMenu: FC = () => {
   const { logo, nav, plus } = useHeaderScroll();
@@ -27,7 +28,11 @@ export const DesktopMenu: FC = () => {
           })}
         />
 
-        <Navigation mode="desktop" />
+        <div className="hidden items-center gap-5 md:flex">
+          <Navigation mode="desktop" />
+          <ChangeLanguageButton />
+        </div>
+
         <PlusIcon
           style={{
             ...plus,

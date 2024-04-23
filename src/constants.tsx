@@ -10,22 +10,22 @@ type navigationItems = {
 export const navigationItems: navigationItems[] = [
   {
     id: 1,
-    name: "Home",
+    name: "home",
     path: paths.main,
   },
   {
     id: 2,
-    name: "About me",
+    name: "about_me",
     path: paths.about_me,
   },
   {
     id: 3,
-    name: "What to expect",
+    name: "what_to_expect",
     path: paths.what_to_expect,
   },
   {
     id: 4,
-    name: "Contact",
+    name: "contact",
     path: paths.contact,
   },
 ];

@@ -5,6 +5,7 @@ import { Navigation } from "@/components/navigation";
 import { FC } from "react";
 import { useHeaderScroll } from "@/hooks/useHeaderScroll.tsx";
 import { useMenu } from "@/components/header/Menu.tsx";
+import ChangeLanguageButton from "@/components/buttons/change_language.tsx";
 
 export const MobileMenu: FC = () => {
   const { plus } = useHeaderScroll();
@@ -23,8 +24,11 @@ export const MobileMenu: FC = () => {
         )}
         onClick={toggle}
       />
-      <div className="z-[100] flex  h-dvh items-center rounded bg-secondary p-4">
+      <div className="relative z-[100]  flex h-dvh items-center rounded bg-secondary p-4">
         <Navigation mode="mobile" close={close} />
+        <div className="absolute inset-x-0 bottom-10 flex justify-center ">
+          <ChangeLanguageButton />
+        </div>
       </div>
     </Drawer>
   );
