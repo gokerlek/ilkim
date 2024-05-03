@@ -25,7 +25,7 @@ export const ContactInfo: FC = () => {
 
       <div className="flex items-center space-x-2">
         <span className="font-bold">KVK: </span>
-        <span>8677907</span>
+        <span>86779079</span>
       </div>
     </div>
   );
