@@ -19,7 +19,7 @@ const WhatToExpect: FC = () => {
               <div
                 key={index}
                 className={clsx(
-                  "paragraph flex  items-center gap-5 rounded-lg bg-secondary/20 p-5 text-justify md:gap-8 md:p-8",
+                  "paragraph flex  items-center gap-5 hyphens-auto rounded-lg bg-secondary/20 p-5 text-justify md:gap-8 md:p-8",
                   {
                     "flex-row-reverse": index % 2 !== 0,
                     "flex-row": index % 2 === 0,
@@ -40,11 +40,11 @@ const WhatToExpect: FC = () => {
         <BaseContainer>
           <div className=" max-w-5xl space-y-5">
             <div className="title">{t("what_do_i_not_work_with")}</div>
-            <div className="paragraph space-y-5 text-justify">
+            <div className="paragraph space-y-5 hyphens-auto text-justify">
               {t("what_do_i_not_work_with_content")}
             </div>
 
-            <div className="space-y-5 text-justify text-base font-semibold text-gray-700 md:text-lg">
+            <div className="space-y-5 hyphens-auto text-pretty text-justify text-base font-semibold text-gray-700 md:text-lg">
               {t("i_do_not_have_a_waitlist_at_the_moment")}
             </div>
 
@@ -54,11 +54,11 @@ const WhatToExpect: FC = () => {
               {t("fees_content")}
             </Markdown>
 
-            <div className="subtitle space-y-5 text-justify">
+            <div className="subtitle space-y-5 hyphens-auto text-justify">
               {t("i_do_not_work_with_insurances")}
             </div>
 
-            <div className="paragraph space-y-5 text-justify">
+            <div className="paragraph space-y-5 hyphens-auto text-justify">
               {t("i_do_not_work_with_insurances_content")}
             </div>
           </div>

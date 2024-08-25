@@ -27,7 +27,7 @@ export const Header = () => {
             <span className="text-5xl font-bold uppercase text-gray-800 md:text-7xl">
               {t("human_in_the_being")}
             </span>
-            <span className="text-2xl font-light text-gray-800 md:text-4xl">
+            <span className="text-balance text-2xl font-light text-gray-800 md:text-4xl">
               {t("we_are_all_humans")}
             </span>
           </div>
