@@ -11,7 +11,7 @@ export const ContactInfo: FC = () => {
 
       <div className="flex items-center space-x-2">
         <PhoneIcon className="h-6 w-6" />
-        <span>+06 17 50 60 30 </span>
+        <span>+06 17 506030 </span>
       </div>
 
       <div className="flex items-center space-x-2">
