@@ -21,7 +21,9 @@ body {
 .paragraph {
   @apply text-base md:text-lg text-gray-700 font-light text-pretty hyphens-auto
 }
-
+.test {
+  @apply text-base md:text-lg text-gray-700 font-light text-pretty hyphens-auto
+}
 
 
 
